@@ -8,7 +8,7 @@ console.log("Grape Soda!");
 console.log("Grape Soda!");
 console.log("Grape Soda!");
 }
-
+logger();
 
 function adder(num1, num2){
 	console.log(num1+num2);
