@@ -1,25 +1,49 @@
 // JavaScript Document
+const name = "aj";
 
-var	life = 100 ;//GLOBAL
-life = life -10;
-life = life -10;
-var	name = "AJ" ;// STRING
+function logger(){
+	console.log(name);
+console.log("Grape Soda!");
+console.log("Grape Soda!");
+console.log("Grape Soda!");
+console.log("Grape Soda!");
+}
 
-var box = null; //OBJECT
-console.log(life) ; 
-console.log(name) ;
-console.log(box);
 
-"use strict" ;
-
-(function() { //BLOCK
-let apples = 1;
-if (true) {
-	let	apples = 2;
-console.log(apples);
-}	
-console.log(apples);
-})();
+function adder(num1, num2){
+	console.log(num1+num2);
 	
-const i = 2;
-console.log(i);
+}
+adder(6,20)
+
+function toUpper(text){
+	const upperCased = text.toUpperCase();
+	console.log(upperCased);
+}
+
+toUpper(name);
+
+function greet(name){
+console.log("happy weekend" + name + ":)");
+}
+
+greet();
+
+const person = {
+  firstName: "Savannah",
+  lastName : "Boyen",
+  id     :  5566
+};
+
+
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person.lastName;
+
+
+
+
+let text = "TryingOutDifferentMethods";
+document.getElementById("demo").innerHTML = text.length;
+
+
+
