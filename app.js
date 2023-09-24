@@ -1,49 +1,50 @@
 // JavaScript Document
-const name = "aj";
+const age = 10;
 
-function logger(){
-	console.log(name);
-console.log("Grape Soda!");
-console.log("Grape Soda!");
-console.log("Grape Soda!");
-console.log("Grape Soda!");
-}
-logger();
-
-function adder(num1, num2){
-	console.log(num1+num2);
-	
-}
-adder(6,20)
-
-function toUpper(text){
-	const upperCased = text.toUpperCase();
-	console.log(upperCased);
+if(age >= 18) {
+console.log("You have access!");		
+} else if(age < 15) {
+console.log("Sorry you're wayyy too young!");
 }
 
-toUpper(name);
 
-function greet(name){
-console.log("happy weekend" + name + ":)");
+else {
+console.log("Access denied");
 }
+const dice1 = 6;
+const dice2 = 3;
 
-greet();
+if (dice1 === 6 || dice2 ===6){
+console.log("+10 damage to monster!");
+}else {
+console.log("You have been SLAIN");	
+}
+const name = "Alejandro";
 
-const person = {
-  firstName: "Savannah",
-  lastName : "Boyen",
-  id     :  5566
-};
+console.log(`Hello there my name is ${name}`);
 
+console.log("Hello it's me " + name + " and my age is older than " + age + " and I love to drink coffee!");
 
-document.getElementById("demo").innerHTML =
-person.firstName + " " + person.lastName;
+console.log(`Hello it's me ${name} and my age is older than ${age}`);
 
+const combined = name + age;
+console.log(typeof combined);
 
+const expr = 'snacks';
+switch (expr) {
+  case 'jerky':
+    console.log('jerky is $1.70 a pound.');
+    break;
+  case 'apples':
+  case 'bananas':
+    console.log('apples and bananas are $1.00 a pound.');
+    break;
+  default:
+    console.log(`Sorry, we are out of ${expr}.`);
+} //trying diff switch statement
 
+const PI = 3.14159;
+const num = PI.toFixed(3);
 
-let text = "TryingOutDifferentMethods";
-document.getElementById("demo").innerHTML = text.length;
-
-
+console.log(num);
 
