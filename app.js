@@ -1,42 +1,27 @@
 // JavaScript Document
-const names = ["Aj","Sav","Ace","Ken","Gwen","Ben"];
+const schedule = ["Wake up", "Eat", "Voice record","Watch new movie"];
+
+console.log(schedule[2]);
+schedule.push("A new item has been added");
+
+schedule.unshift("Something new"); 
 
 
-for(name of names) {
-console.log(name);
-if(name === "Ace") {
-console.log("Ace is my dog!");
-	break;
-}	
+console.log(schedule.indexOf("Voice record"));
+
+const user = {
+	name: "Aj",
+	age: 21,
+	employed: true,
+	inventory: ["phone","wallet","keys"],
+
+sayName: function(){
+	console.log(this.name);
 }
-let loading = 0;
+};
 
-while(loading < 100){
-console.log("Site is still loading...");
-	
-	loading ++;
-}
- const text = document.querySelector(".title")
-const changeColor = document.querySelector(".changeColor");
+user.sayName();
 
-
-
-changeColor.addEventListener("click", function(){
-	text.classList.toggle("change");
-});
-
-const	userList= document.querySelectorAll(".name-list li");
-
-for(user of userList){
-	user.addEventListener("click", function(){
-	this.style.color = "blue";	
-	})
-}
-console.log(userList);
-
-const listInput = document.querySelector(".list-input");
-
-console.log(listInput.value);
 
 
 
